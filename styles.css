@@ -1,0 +1,60 @@
+body {
+    font-family: Michroma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c2c2c;
+    color: white;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.catalog {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+} 
+
+main {
+    width: 70%;
+}
+
+aside {
+    width: 30%;
+}
+
+main #products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card img {
+    width: 200px;
+    height: 200px;
+}
+
+#filters .prices {
+    display: flex;
+    gap: 20px;
+}
+#filters .prices  label {
+    width: 45%;
+}
+
+#filters #categories {
+    display: flex;
+    flex-direction: column;
+}
+
+#filters button {
+    padding: 5px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+

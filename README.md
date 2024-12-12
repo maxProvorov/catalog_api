@@ -4,8 +4,6 @@ This project is a simple REST API-based product catalog built using PHP with SQL
 
 ---
 
-## API Endpoints
-
 ### Endpoints
 
 #### 1. **Get All Products**

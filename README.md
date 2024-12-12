@@ -4,11 +4,7 @@ This project is a simple REST API-based product catalog built using PHP with SQL
 
 ---
 
-
 ## API Endpoints
-
-### Base URL
-`http://localhost/api`
 
 ### Endpoints
 
@@ -25,21 +21,19 @@ This project is a simple REST API-based product catalog built using PHP with SQL
 
 **Example Request:**
 ```
-GET /products?category=Animals&min_price=20&max_price=50
+GET /api.php?endpoint=products&categories[]=1&categories[]=2&min_price=20&max_price=30
 ```
 
 **Response:**
 ```json
 [
   {
-    "id": 1,
-    "name": "Space and Science",
-    "description": "A sci-fi themed product.",
-    "category": "Space and Science",
-    "price": 23.97,
-    "image_path": "images/space_science.jpg",
-    "created_at": "2024-12-10 10:00:00",
-    "updated_at": "2024-12-10 10:00:00"
+    "id":1,
+    "name":"Horse",
+    "description":"Horse with a flowing mane in the wind",
+    "price":23.97,
+    "image_path":"\/images\/horse.png",
+    "category":"Animals"
   }
 ]
 ```

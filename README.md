@@ -39,10 +39,10 @@ GET /api.php?endpoint=products&categories[]=1&categories[]=2&min_price=20&max_pr
 ### Steps
 1. Run migrations
    ```bash
-   php migrate.php
+   php database/migrate.php
    ```
 
 2. Run seeds
    ```bash
-   php seeds.php
+   php database/seeds.php
    ```

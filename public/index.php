@@ -48,10 +48,10 @@
             container.innerHTML = products.map(product => `
                 <div class="product-card">
                     <a href="product.php?id=${product.id}">
-                        <img src="${product.image_path}" alt="${product.name}">
+                        <img src="images/${product.image_path}" alt="${product.name}">
                         <h3>${product.category}</h3>
                         <p>${product.price} AUD</p>
-                        <a href="${product.image_path}" download="${product.name}.png" class="download-button">Download Image</a>
+                        <a href="images/${product.imagePath}" download="${product.name}.png" class="download-button">Download Image</a>
                     </a>
                 </div>
             `).join('');

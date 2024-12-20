@@ -29,11 +29,6 @@ switch ($endpoint) {
 
     case 'product':
         $productId = $_GET['id'] ?? null;
-        if (!$productId) {
-            http_response_code(400);
-            echo json_encode(['error' => 'Product ID is required']);
-            exit;
-        }
         $productRepository = new ProductRepository($pdo);
         $product = $productRepository->getProductById((int)$productId);
         if (!$product) {
